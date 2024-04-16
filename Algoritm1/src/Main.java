@@ -77,8 +77,7 @@ public class Main {
 //            }
 //        }
 //        System.out.println(Arrays.toString(array3));
-//    }
-//}
+
 // Сортування з рандомного елемента
 //        int[] array4 = {10, 2, 10, 3, 1, 2, 5};
 //        System.out.println("Сортування з рандомного елемента");
