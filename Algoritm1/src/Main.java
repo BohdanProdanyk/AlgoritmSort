@@ -1,23 +1,25 @@
 import java.util.Arrays;
 import java.util.Random;
 
-public class Main1 {
+import static java.util.Collections.swap;
+
+public class Main {
     public static void main(String[] args) {
 //Сортування обміном
-//        System.out.println("Сортування обміном");
-//        int[] array = {8,6,1,4,2,9,3,5,7};
-//        System.out.println(Arrays.toString(array));
-//        boolean needIteration = true;
-//        while (needIteration){
-//            needIteration = false;
-//            for (int i = 1; i < array.length; i++){
-//                if (array[i] < array[i - 1]){
-//                    swap(array,i,i-1);
-//                    needIteration = true;
-//                }
-//            }
-//        }
-//        System.out.println(Arrays.toString(array));
+        System.out.println("Сортування обміном");
+        int[] array = {8,6,1,4,2,9,3,5,7};
+        System.out.println(Arrays.toString(array));
+        boolean needIteration = true;
+        while (needIteration){
+            needIteration = false;
+            for (int i = 1; i < array.length; i++){
+                if (array[i] < array[i - 1]){
+                    swap(array,i,i-1);
+                    needIteration = true;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(array));
 
 //Сортування вибором
 //        System.out.println("Сортування вибором");
@@ -100,9 +102,10 @@ public class Main1 {
 //                }
 //            }
 //        }
-
-//    public static void swap(int[] array, int ind1, int ind2){
-//        int tmp = array[ind1];
-//        array[ind1] = array[ind2];
-//        array[ind2] = tmp;
-//    }
+    }
+    public static void swap(int[] array, int ind1, int ind2){
+        int tmp = array[ind1];
+        array[ind1] = array[ind2];
+        array[ind2] = tmp;
+    }   
+}
